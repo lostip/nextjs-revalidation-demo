@@ -1,4 +1,4 @@
-import { Product } from "../types";
+import { Product } from "./types";
 import RevalidateButton from "./revalidate-button";
 export default function ProductInfo({product, handleTag, idTag} : { product: Product, handleTag: string, idTag: string}) {
     return (
