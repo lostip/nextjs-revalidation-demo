@@ -1,6 +1,6 @@
-import {Product} from "../types";
+import { Product } from '../../types';
 
-const API_BASE = 'https://65f9e7b63909a9a65b199fe3.mockapi.io/api'
+const API_BASE = 'https://65f9e7b63909a9a65b199fe3.mockapi.io/api';
 
 const ID = '2';
 const HANDLE = 'loose-pot';

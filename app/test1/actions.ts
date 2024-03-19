@@ -1,6 +1,6 @@
-import {Product} from "../types";
+import { Product } from '../../types';
 
-const API_BASE = 'https://65f9e7b63909a9a65b199fe3.mockapi.io/api'
+const API_BASE = 'https://65f9e7b63909a9a65b199fe3.mockapi.io/api';
 
 const ID = '1';
 const HANDLE = 'handy-terrapin';
@@ -21,13 +21,13 @@ export async function getTestProduct() {
   try {
     const originalTags = [getProductHandleTag(), getProductIdTag()];
 
-    let result = await fetch(url, {
+    const result = await fetch(url, {
       cache: 'force-cache',
       method: 'GET',
       next: { tags: originalTags },
     });
 
-    let response: Product[] = await result.json();
+    const response: Product[] = await result.json();
     if (response) {
       console.log('response = ', JSON.stringify(response, null, 2)); // TODO (denise) remove log
     } else {

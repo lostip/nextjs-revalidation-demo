@@ -21,14 +21,14 @@ export default function RevalidateButton({
 
   return (
     <button
-      type="button"
       onClick={() => clickHandler()}
       style={{
-        cursor: 'pointer',
         border: `1px solid ${borderColor}`,
+        cursor: 'pointer',
         margin: '4px',
         padding: '4px',
       }}
+      type="button"
     >
       {label}
     </button>

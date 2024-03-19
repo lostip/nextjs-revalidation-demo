@@ -1,7 +1,7 @@
 export type Product = {
-    id: string;
-    name: string;
-    handle: string;
-    stock: number;
-    price: string;
+  handle: string;
+  id: string;
+  name: string;
+  price: string;
+  stock: number;
 };
