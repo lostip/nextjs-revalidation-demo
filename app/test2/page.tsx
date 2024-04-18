@@ -1,14 +1,15 @@
+import { cookies } from 'next/headers';
 import { getProductHandleTag, getProductIdTag, getTestProduct } from './actions';
+import ProductInfo from '../product-info';
 
 export const metadata = {
   description: 'Test 2',
   title: 'Test 2',
 };
 
-import ProductInfo from '../product-info';
-
 export default async function Test2Page() {
   const product = await getTestProduct();
+  cookies();
 
   return (
     <main style={{ fontSize: '20px', padding: '24px' }}>
