@@ -2,15 +2,15 @@ import { getProductHandleTag, getProductIdTag, getTestProduct } from './actions'
 import ProductInfo from '../product-info';
 
 export const metadata = {
-  description: 'Test 2',
-  title: 'Test 2',
+  description: 'Test 3',
+  title: 'Test 3 - static',
 };
 
 export function generateStaticParams() {
   return [];
 }
 
-export default async function Test2Page() {
+export default async function Test3Page() {
   const product = await getTestProduct();
 
   return (

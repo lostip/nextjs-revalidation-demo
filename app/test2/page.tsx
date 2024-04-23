@@ -4,7 +4,7 @@ import ProductInfo from '../product-info';
 
 export const metadata = {
   description: 'Test 2',
-  title: 'Test 2',
+  title: 'Test 2 - dynamic',
 };
 
 export default async function Test2Page() {
